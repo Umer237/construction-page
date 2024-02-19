@@ -525,7 +525,7 @@ a:is(:hover, :focus) figcaption {
 }
 
 .team {
-  width: 364px;
+  width: 100%;
   height: 650px;
   object-fit: cover;
   display: block;
@@ -623,6 +623,7 @@ a:is(:hover, :focus) figcaption {
 .Footer-BG .Footer-Second-FLex {
   display: flex;
   color: white;
+  flex-wrap: wrap;
   padding: 0 0 80px 0;
   justify-content: center;
   gap: 185px;
@@ -788,7 +789,8 @@ a:is(:hover, :focus) figcaption {
 .Client-BG {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url("https://img.freepik.com/free-vector/realistic-white-monochrome-background_23-2149023988.jpg?w=1380&t=st=1708179209~exp=1708179809~hmac=caefa91151b384eb3b4cee1c676875b28c55ac71d77c9ac901255aa68f45e720");
-  height: 600px;
+  height: auto;
+  padding-bottom: 100px;
 }
 .Client-Flex {
   display: flex;
@@ -803,7 +805,7 @@ a:is(:hover, :focus) figcaption {
 .review-main-flex {
   padding: 15px;
   cursor: pointer;
-  max-width: 100%;
+  max-width: 600px;
   background-color: rgb(248, 246, 246);
   box-shadow: 0 8px 32px 0 rgba(31, 31, 31, 0.37);
   backdrop-filter: blur(5px);
@@ -830,12 +832,14 @@ a:is(:hover, :focus) figcaption {
 }
 .review-slider {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 50px;
-  width: 1200px;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 1250px;
 }
 .review-slider-width {
-  width: 1200px;
+  width: 100%;
   margin: auto;
 }
 
@@ -878,7 +882,6 @@ a:is(:hover, :focus) figcaption {
   align-items: center;
   flex-direction: column;
   padding: 40px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 .blog-heading {
   display: flex;
@@ -968,6 +971,7 @@ a:is(:hover, :focus) figcaption {
   background-color: #272727;
   color: white;
   display: flex;
+  flex-wrap: wrap-reverse;
   justify-content: space-between;
 }
 .Contact-us-Top-Text {
@@ -1028,5 +1032,90 @@ a:is(:hover, :focus) figcaption {
   cursor: pointer;
   width: 250px;
 }
-
+.Contact-us-BG .Contact-Us-Flex img {
+  width: 100%;
+}
 /*------------------ Contact Us --------------*/
+
+/*------------------ Services ------------------*/
+
+.Our-Services-Top-Text {
+  max-width: 600px;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.Our-Services-Top-Text .top-text-01 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.Our-Services-Top-Text .top-text-01 h3 {
+  font-weight: 500;
+}
+.Our-Services-Top-Text h2 {
+  font-size: 45px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+.Our-Services-Top-Text .top-text-01 .Services-top-truck {
+  color: #ff8f27;
+  font-size: 40px;
+}
+
+.Second-Section {
+  display: flex;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  position: relative;
+}
+
+.Services {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+  display: block;
+}
+
+.content {
+  background: linear-gradient(rgba(48, 48, 48, 0.77) 0%, #292929 100%);
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  text-align: center;
+  height: 60%;
+  color: white;
+  transition: all ease-in 0.3s;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+
+.content:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.content h3 {
+  font-size: 35px;
+  font-weight: 600;
+}
+.content p {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/*--------------------- Services ------------------*/

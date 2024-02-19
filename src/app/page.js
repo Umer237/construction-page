@@ -12,6 +12,7 @@ import CoreFeatures from "./Components/CoreFeatures/page";
 import Reviews from "./Components/Reviews/page";
 import Blogs from "./Components/Blogs/page";
 import Contactus from "./Components/Contactus/page";
+import Services from "./Components/Services/page";
 
 
 
@@ -21,10 +22,11 @@ export default function Home() {
       <Navbar />
       <Banner />
       <Aboutus />
+      <Services/>
       <Industry />
       <Projects />
       <CoreFeatures />
-      <Team />
+      <Team/>
       <Reviews/>
       <Contactus/>
       <Blogs/>
